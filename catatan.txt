@@ -1,0 +1,34 @@
+SESI 1
+- Installing nextJS & Tailwindcss
+- fetch API
+
+SESI 2
+- component reusability
+- search input
+
+SESI 3
+- simply theme UI color pallete:
+    primary:'#eeeeee',
+    accent:'#ffc639',
+    secondary:'#393e46',
+    dark:'#222831'
+
+- halaman not found
+- halaman loading
+
+SESI 4
+- feature lihat semua 
+- pagination 
+
+SESI 5
+- reusable api call
+- detail anime + videos trailer
+
+SESI 6
+- rekomendasi anime
+
+SESI 7
+- refresh get random rekomendasi
+
+SESI 8
+- buat Login dengan auth GITHUB
