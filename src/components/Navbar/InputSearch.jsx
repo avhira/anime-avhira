@@ -17,21 +17,14 @@ export default function InputSearch() {
     if (e.key === 'Enter' || e.type === 'click') {
       e.preventDefault();
       router.push(`/search/${keyword}`);
+      searchRef.current.value = '';
     }
   };
 
   return (
     <div className="relative">
-      <input
-        placeholder="Cari Anime..."
-        className="w-full p-2 rounded"
-        ref={searchRef}
-        onKeyDown={handleSearch}
-      />
-      <button
-        className="absolute top-2 end-2"
-        onClick={handleSearch}
-      >
+      <input placeholder="Cari Anime..." className="w-full p-2 rounded" ref={searchRef} onKeyDown={handleSearch} />
+      <button className="absolute top-2 end-2" onClick={handleSearch}>
         <MagnifyingGlass size={24} />
       </button>
     </div>
