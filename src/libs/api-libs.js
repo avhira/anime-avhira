@@ -5,20 +5,8 @@ export const getAnimeResponse = async (resource, query) => {
 };
 
 export const getNestedAnimeResponse = async (resource, objectProperty) => {
-  try {
-    const response = await getAnimeResponse(resource);
-    const flattenedData = response.data.flatMap((item) => {
-      if (item && item[objectProperty]) {
-        return item[objectProperty];
-      } else {
-        return [];
-      }
-    });
-    return flattenedData;
-  } catch (error) {
-    console.error('Error fetching or processing data:', error);
-    throw error;
-  }
+  const response = await getAnimeResponse(resource);
+  return response.data?.flatMap((item) => item[objectProperty]);
 };
 
 export const reproduce = (data, gap) => {
